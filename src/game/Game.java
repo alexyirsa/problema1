@@ -11,7 +11,7 @@ public class Game {
     private static final String OBSTACLE = "⬛";
     private static final String CAR = "🚙";
     private static final String PLAYER_CAR = "🚗";
-
+	private Random random = new Random(); 
     private String[][] board;
     private int player;
 
@@ -68,8 +68,7 @@ public class Game {
     }
 
     private void generateRandomCar() {
-        Random random = new Random();
-        int newCar = random.nextInt(8);
+        int newCar = this.random.nextInt(8);
         board[0][newCar] = CAR;
     }
 
