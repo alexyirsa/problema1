@@ -3,7 +3,7 @@ package game;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Random;
+import java.security.SecureRandom;
 
 public class Game {
 
@@ -11,7 +11,7 @@ public class Game {
     private static final String OBSTACLE = "⬛";
     private static final String CAR = "🚙";
     private static final String PLAYER_CAR = "🚗";
-	private Random random = new Random(); 
+	SecureRandom random = new SecureRandom();
     private String[][] board;
     private int player;
 
